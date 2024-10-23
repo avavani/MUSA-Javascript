@@ -1,0 +1,32 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "header header"
+                        "map chart";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+h1 {
+  grid-area: header;
+}
+
+.map {
+  grid-area: map;
+  background-color: white;
+  flex-grow: 1;
+}
+
+.chart {
+  grid-area: chart;
+}
+
+.chart .canvas {
+  width: 100%;
+  height: 100%;
+}

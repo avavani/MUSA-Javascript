@@ -1,0 +1,12 @@
+h1 {
+    text-align:center;
+    color: rgb(255, 250, 244);
+}
+
+#map {height: 80vh;
+    width: 100vw; 
+}
+
+html {
+    background-color: black;
+}
