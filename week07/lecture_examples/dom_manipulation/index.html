@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>DOM Manipulation Examples</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>DOM Manipulation Examples</h1>
+    </header>
+
+    <main>
+      <div class="map" id="map"></div>
+
+      <fieldset id="neighborhoods">
+        <legend>Neighborhoods</legend>
+
+        <input class="search" name="search-neighborhoods" aria-label="Search for a neighborhood" placeholder="Search for a neighborhood...">
+
+        <ul id="neighborhoods-list">
+          <li>
+            <label>
+              <input name="neighborhood" type="checkbox" value="EAST_PASSYUNK">
+              East Passyunk
+            </label>
+          </li>
+          <li>
+            <label>
+              <input name="neighborhood" type="checkbox" value="CHESTNUT_HILL">
+              Chestnut Hill
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
